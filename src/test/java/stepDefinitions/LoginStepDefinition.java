@@ -23,6 +23,7 @@ public class LoginStepDefinition extends BaseClass {
 	
 	@When("user enter username as {string} and password as {string}")
 	public void user_enter_username_as_and_password_as(String username, String password) {
+		System.out.println("Use enter credentials");
 		loginPage.enterCredentials(username, password);
 	}
 	
