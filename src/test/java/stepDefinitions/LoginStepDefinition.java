@@ -12,6 +12,7 @@ public class LoginStepDefinition extends BaseClass {
 	
 	@Given("user open the application {string}")
 	public void user_open_the_application(String url) {
+		System.out.println("User launch browser");
 		loginPage = new LoginPage(driver);   //Driver initialize from Hooks/BaseClass using Hooks [Before, After] initialize the driver instance
 		loginPage.openApplication(url);
 	}
