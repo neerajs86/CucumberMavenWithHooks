@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">     <!-- It takes care of where Appenders needs to be shown -->
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">		  <!-- Where to show the logs-->
+		<!-- %d{HH:mm:ss.SSS} - Timestamp
+		     [%t]             - Main thread name
+		     %5level          - Padding with Logger name - Info, Debugger etc.
+		     %logger{36}      - Class name
+		     %msg             - message
+			 %n               - next line
+         -->
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %5level %logger{36} - %msg%n"></PatternLayout>
+		</Console>
+		<File name="File" fileName="logs/test.log">			  <!-- Where to keep the logs-->
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %5level %logger{36} - %msg%n"></PatternLayout>
+		</File> 
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="Console"></AppenderRef>
+			<AppenderRef ref="File"></AppenderRef>
+		</Root>
+	</Loggers>
+</Configuration>

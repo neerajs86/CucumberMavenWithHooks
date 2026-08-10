@@ -1,0 +1,8 @@
+20:35:45.072 [main]  INFO listeners.TestListener - Test suite started
+20:35:45.445 [main]  INFO listeners.TestListener - runScenario
+20:35:45.445 [main]  INFO listeners.TestListener - Runs Cucumber Scenarios
+20:36:00.531 [main]  INFO listeners.TestListener - runScenario
+20:36:00.535 [main]  INFO listeners.TestListener - runScenario
+20:36:00.535 [main]  INFO listeners.TestListener - Runs Cucumber Scenarios
+20:36:15.301 [main] ERROR listeners.TestListener - runScenario
+20:36:15.337 [main]  INFO listeners.TestListener - Test suite completed
