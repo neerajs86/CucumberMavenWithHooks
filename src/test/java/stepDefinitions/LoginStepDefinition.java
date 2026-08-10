@@ -18,6 +18,7 @@ public class LoginStepDefinition extends BaseClass {
 	
 	@When("user click login link")
 	public void user_click_login_link() {
+		System.out.println("User click login link");
 		loginPage.clickLoginLink();
 	}
 	
