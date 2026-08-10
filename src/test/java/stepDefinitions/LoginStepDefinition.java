@@ -28,6 +28,7 @@ public class LoginStepDefinition extends BaseClass {
 	
 	@When("user clicks the login button")
 	public void user_clicks_the_login_button() {
+		System.out.println("Use clicks login button");
 		loginPage.clickLoginButton();
 	}
 	
