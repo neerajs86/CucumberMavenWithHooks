@@ -34,7 +34,7 @@ public class LoginStepDefinition extends BaseClass {
 	@Then("verify the logged in user as {string}")
 	public void verify_the_logged_in_user_as(String loggedUser) {
 	    String loggedTxt = loginPage.verifyLoggedInUser();
-	    System.out.println(loggedTxt);
+	    System.out.println("Logged in user : " + loggedTxt);
 	    System.out.println(loggedTxt.contains(loggedUser));
 	    Assert.assertTrue(loggedTxt.contains(loggedUser));
 	}
